@@ -17,8 +17,8 @@ function App() {
           params: {
             ingredients: query,
             number: 10,
-            apiKey: 'YOUR_SPOONACULAR_API_KEY'
-          }
+            apiKey: process.env.REACT_APP_SPOONACULAR_API_KEY, // ✅ use env variable here
+          },
         }
       );
       setRecipes(response.data);
@@ -27,6 +27,9 @@ function App() {
       alert("Error fetching recipes");
     }
   };
+
+  // ✅ This line helps confirm your key is loading correctly (you can remove it later)
+  console.log("Spoonacular API Key:", process.env.REACT_APP_SPOONACULAR_API_KEY);
 
   return (
     <div className="App">

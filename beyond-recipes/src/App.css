@@ -1,0 +1,31 @@
+/* Apply styles to the root App container */
+.App {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+    color: #333;
+    min-height: 100vh; /* Make the app full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header styling */
+header {
+    background-color: #ff6f61;
+    color: white;
+    padding: 20px;
+}
+
+/* Main content styling */
+main {
+    flex-grow: 1; /* Take up remaining space between header and footer */
+    padding: 20px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #eee;
+    color: #555;
+    padding: 10px;
+}

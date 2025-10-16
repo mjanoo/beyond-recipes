@@ -1,0 +1,33 @@
+.recipe-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  width: 180px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin: 10px;
+}
+
+.recipe-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.recipe-card h3 {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.recipe-card button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.recipe-card button:hover {
+  background-color: #ff4f41;
+}
